@@ -1,0 +1,487 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Secretary's Portal</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet">
+	<style>
+		/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+</style>
+  </head>
+
+<body id="page-top">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Dr. Roger McDouglas</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience">Appointments</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education">Reservations</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#addremove">Add / Remove Items</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html">Logout </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+	<div class="container-fluid p-0">
+		<section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+			<div class="my-auto">
+				<h1 class="mb-0">B & T SHOP
+				</h1>
+				<div class="subheading mb-5">Welcome Admin!
+					<a href="mailto:name@email.com">name@email.com</a>
+				</div>
+				<p class="lead mb-5">Please see your appointments, always be updated!</p>
+				<div class="social-icons">
+					<a href="#">
+						<i class="fab fa-linkedin-in"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-github"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+				</div>
+			</div>
+		</section>
+		<hr class="m-0">
+		<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+			<div class="my-auto">
+				<h2 class="mb-5">Appointments</h2>
+					<div class="resume-item d-flex flex-column flex-md-row mb-5">
+						<div class="resume-content mr-auto">
+							<div class="tab">
+							<center>
+								<button class="tablinks" onclick="openCity(event, 'London')">Appointments</button>
+								<button class="tablinks" onclick="openCity(event, 'Paris')">Open Slots</button>
+								<button class="tablinks" onclick="openCity(event, 'Tokyo')">Appointment History</button>
+							</center>
+						</div>
+					<div id="London" class="tabcontent">
+						<i>This are the appointments booked by customers:</i>            
+						<center><table class="table table-hover">
+							<thead>
+								<tr>
+									<th>Firstname</th>
+									<th>Lastname</th>
+									<th>Time</th>
+									<th>Date</th>
+									<th>Transaction Result</th> 
+								</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td style="font-color:red;">John (new)</td>
+								<td>Doe</td>
+								<td>1:30pm</td>
+								<td>January 13, 2008</td>
+								<td><button type="button" class="btn">DONE</button> <button type="button" class="btn">CANCELLED</button> </td>
+							</tr>
+							<tr>
+								<td>Mary</td>
+								<td>Moe</td>
+								<td>1:30pm</td>
+								<td>January 14, 2008</td>
+								<td><button type="button" class="btn">DONE</button> <button type="button" class="btn">CANCELLED</button> </td>
+							</tr>
+							<tr>
+								<td>July</td>
+								<td>Dooley</td>
+								<td>1:30pm</td>
+								<td>January 26, 2008</td>
+								<td><button type="button" class="btn">DONE</button> <button type="button" class="btn">CANCELLED</button> </td>
+							</tr>
+							</tbody>
+						</table></center>
+					</div>
+				</div>
+			</div>
+			<div id="Paris" class="tabcontent">
+				<table class="table table-hover">
+					<thead>
+					<tr>
+						<th>-</th>
+						<th> 8am-10am</th>
+						<th> 10am-12nn </th>
+						<th> 1pm-3pm </th>
+						<th> 4pm-6pm</th>
+						<th> 6pm-8pm</th>
+					</tr>
+					<tr>
+						<th>02/04</th>
+						<th><button type="button" class="btn">ON</button></th>
+						<th><button type="button" class="btn">ON</button></th>
+						<th><button type="button" class="btn">ON</button></th>
+						<th><button type="button" class="btn">ON</button></th>
+						<th><button type="button" class="btn">ON</button></th>
+					</tr>
+					<tr>
+						<th>02/05</th>
+						<th><button type="button" class="btn">ON</button></th>
+						<th><button type="button" class="btn">ON</button></th>
+						<th><button type="button" class="btn">ON</button></th>
+						<th><button type="button" class="btn">ON</button></th>
+						<th><button type="button" class="btn">ON</button></th>
+					</tr>
+					<tr>
+						<th>02/06</th>
+						<th><button type="button" class="btn">ON</button></th>
+						<th><button type="button" class="btn">ON</button></th>
+						<th><button type="button" class="btn">ON</button></th>
+						<th><button type="button" class="btn">ON</button></th>
+						<th><button type="button" class="btn">ON</button></th>
+					</tr>
+					<tr>
+						<th>02/07</th>
+						<th><button type="button" class="btn">ON</button></th>
+						<th><button type="button" class="btn">ON</button></th>
+						<th><button type="button" class="btn">ON</button></th>
+						<th><button type="button" class="btn">ON</button></th>
+						<th><button type="button" class="btn">ON</button></th>
+					</tr>
+					<tr>
+						<th>02/08</th>
+						<th><button type="button" class="btn">ON</button></th>
+						<th><button type="button" class="btn">ON</button></th>
+						<th><button type="button" class="btn">ON</button></th>
+						<th><button type="button" class="btn">ON</button></th>
+						<th><button type="button" class="btn">ON</button></th>
+					</tr>
+					<tr>
+						<th>02/09</th>
+						<th><button type="button" class="btn">ON</button></th>
+						<th><button type="button" class="btn">ON</button></th>
+						<th><button type="button" class="btn">ON</button></th>
+						<th><button type="button" class="btn">ON</button></th>
+						<th><button type="button" class="btn">ON</button></th>
+					</tr>
+				</table>
+			</div>
+		<div id="Tokyo" class="tabcontent">
+			<i>This are the previous appointments and there results:</i>     
+			<center><table class="table table-hover">
+				<thead>
+				<tr>
+					<th>Firstname</th>
+					<th>Lastname</th>
+					<th>Time</th>
+					<th>Date</th>
+					<th>Transaction Result</th> 
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td style="font-color:red;">John (new)</td>
+					<td>Doe</td>
+					<td>1pm-3pm</td>
+					<td>January 13, 2008</td>
+					<td>FINALIZED</td>
+				</tr>
+				<tr>
+					<td>Mary</td>
+					<td>Moe</td>
+					<td>10am-12nn</td>
+					<td>January 14, 2008</td>
+					<td>CANCELLED </td>
+				</tr>
+				<tr>
+					<td>July</td>
+					<td>Dooley</td>
+					<td>8am-10am</td>
+					<td>January 26, 2008</td>
+					<td>CANCELLED </td>
+				</tr>
+				</tbody>
+			</table></center>
+		</div>  	
+	</section>
+	<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+	<div>
+        <div class="my-auto">
+			<h2 class="mb-5">Reservation</h2>
+			<div class="resume-item d-flex flex-column flex-md-row mb-5">
+				<div class="resume-content mr-auto">
+					<div class="tab">
+						<center>
+							<button class="tablinks" onclick="openCity(event, 'Reservation')">Reservation</button>
+							<button class="tablinks" onclick="openCity(event, 'Reservation1 History')">Reservation History</button>
+						</center>
+					</div>
+					<div id="Reservation" class="tabcontent">
+						<i>This are the reservations booked by customers:</i>            
+						<center><table class="table table-hover">
+							<thead>
+							<tr>
+								<th>Firstname</th>
+								<th>Lastname</th>
+								<th>Type of Category</th>
+								<th>Name of Category</th>
+								<th>Item Detail</th> 
+								<th>Accept/Cancel</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td style="font-color:red;">John (new)</td>
+								<td>Doe</td>
+								<td>Female Category</td>
+								<td>Bridal Gown</td>
+								<td>
+								<img src="bridal gown.jpg" style="height:150px;length:200px;"><br>
+								<p>
+									Name: Wedding Dresses White Romantic Wedding Gown Fashionable Bride<br>
+									Specifics: <br>
+									-Fabric: Crystal sand soft net thick satin<br>
+									-Main Fabric: Nylon / Nylon
+								</p>
+								</td>
+								<td><button type="button" class="btn">ACCEPT<br></button><br> <button type="button" class="btn">CANCEL</button> </td>
+							</tr>
+							<tr>
+							<td>Mary</td>
+							<td>Moe</td>
+							<td>Male Category</td>
+				<td>Tuxedo</td>
+				<td>
+				<img src="tuxedo.jpg" style="height:150px;length:200px;"> 
+					Name: Groomsmen Men Wedding Suits Shawl Lapel Groom Tuxedo<br>
+					Specifics: <br>
+						-Material Composition : New Polyester 60% Cotton 35% Polyurethane Elastic Fiber (Urethane Elastic Fibre) 5%<br>
+						-Style Details : Applique <br>
+						-Cotton Content : 30% below
+
+				</td>
+				<td><button type="button" class="btn">ACCEPT</button><br> <button type="button" class="btn">CANCEL</button> </td>
+			</tr>
+			<tr>
+				<td>July</td>
+				<td>Dooley</td>
+				<td>Male Catergory</td>
+				<td>Trench Coats</td>
+				<td>
+				<img src="trench coat.jpg" style="height:150px;length:200px;"> <br>
+				Name: Winter Men Woolen Coat Mid-length Autumn Double Breasted Youth Trench Coat Slim Fit Korean Style Men's Wear Thick Coat <br>
+				Specifics: 
+					-Clothing type : Slim fit<br>
+					-Material Composition : Polyester 94.5% viscose fiber (viscose) 4.6% polyurethane elastic fiber (Spandex) 0.9%<br>
+				<td><button type="button" class="btn">ACCEPT</button><br> <button type="button" class="btn">CANCEL</button> </td>
+			</tr>
+			</tbody>
+			</table></center>
+		</div>
+	
+	<div id="Reservation1 History" class="tabcontent">
+		<i>This are the previous reservations and there results:</i>     
+            <div class="resume-content mr-auto">
+				<center><table class="table table-hover">
+			<thead>
+			<tr>
+				<th>Firstname</th>
+				<th>Lastname</th>
+				<th>Type of Category</th>
+				<th>Name of Category</th>
+				<th>Transaction Result</th> 
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td style="fore-color:red;">Lawrence</td>
+				<td>McFee</td>
+				<td>Male</td>
+				<td>Tuxedo</td>
+				<td>FINALIZED</td>
+			</tr>
+			<tr>
+				<td>Therese</td>
+				<td>Yanako</td>
+				
+				<td>Female</td>
+				<td>Bridal Gown</td>
+				<td>CANCELLED </td>
+			</tr>
+			<tr>
+				<td>April</td>
+				<td>Kim</td>
+				
+				<td>Female</td>
+				<td>Cocktail Dress</td>
+				<td>CANCELLED </td>
+			</tr>
+			</tbody>
+			</table></center>
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>	
+	</section>
+	<script>
+	function openCity(evt, cityName) {
+		var i, tabcontent, tablinks;
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+		document.getElementById(cityName).style.display = "block";
+		evt.currentTarget.className += " active";
+	}
+	</script>
+	<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="addremove">
+	<div class="my-auto">
+		<div>
+			<h2 class="mb-5">Add/Remove Item</h2>
+				<div class="resume-item d-flex flex-column flex-md-row mb-5">
+					<div class="resume-content mr-auto">
+						<div class="tab">
+							<center>
+								<button class="tablinks" onclick="openCity(event, 'additem')">Add Item</button>
+								<button class="tablinks" onclick="openCity(event, 'removeitem')">Remove Item</button>
+							</center>
+						</div>
+					</div>
+				</div>
+		</div>
+		<div id="additem" class="tabcontent">
+			<i>Add an item here:</i>
+			<input type="text" placeholder="Upload Image Here" class="form-control"><button type="button" class="btn">Item Image Name</button><br><br>
+			<span class="caret"></span></button>
+			<div>
+				<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Name of Category</button>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+						<li role="presentation"><a role="menuitem" href="#">Male</a></li>
+						<li role="presentation"><a role="menuitem" href="#">Female</a></li>
+					<ul>
+			</div>
+			<br>
+			<div>
+				<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Type of Category
+					<ul class="dropdown-menu" role="menu" aria-labelledby="menu2">
+						<li role="presentation"><a role="menuitem" href="#">Bridal Gown</a></li>
+						<li role="presentation"><a role="menuitem" href="#">Cocktail Dress</a></li>
+						<li role="presentation"><a role="menuitem" href="#">Debutant Dress</a></li>
+						<li role="presentation"><a role="menuitem" href="#">Ball Gowns</a></li>		
+						<li role="presentation"><a role="menuitem" href="#">Filipiniana Dress</a></li>
+					</ul>
+			</div>
+			<br>
+			<div>
+			<textarea rows="4" cols="50" name="comment" form="usrform">
+				Enter SPECIFICS HERE. (incl., Material Composition , etc...)
+			</textarea>
+			<div>
+		</div>
+	</div>
+	<div id="item" class="tabcontent">
+		<i>Remove item here:</i>     
+        <div class="resume-content mr-auto">
+			<center><table class="table table-hover">
+			<thead>
+				<tr>
+					<th>Type of Category</th>
+					<th>Name of Category</th>
+					<th>Item Name</th>
+					<th>Specifics</th>
+					<th>Remove Item</th>
+				</tr>
+			</thead>
+				<tr>
+					<td>Male</td>
+					<td>Trench Coat</td>
+					<td>Winter Men Woolen Coat Mid-length Autumn Double Breasted Youth Trench Coat Slim Fit Korean Style Men's Wear Thick Coat</td>
+					<td>-Clothing type : Slim fit<br>
+						-Material Composition : Polyester 94.5% viscose fiber (viscose) 4.6% polyurethane elastic fiber (Spandex) 0.9%<br>
+					</td>
+					<td><button type="button" class="btn">Remove</button></td>
+				</tr>
+			</table></center>
+		</div>
+	</div>
+</section>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+
+  </body>
+
+</html>
